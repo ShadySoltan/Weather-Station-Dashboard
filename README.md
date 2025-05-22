@@ -9,7 +9,7 @@ A fully integrated IoT solution that collects real-time environmental data (temp
 
 ### Embedded System Documentation
 
-Title: Weather Station DashBoard
+__Title: Weather Station DashBoard__
 Version: 1.0
 Last Updated: 05/22/2025
 1. Overview
