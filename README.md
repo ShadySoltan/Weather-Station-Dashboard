@@ -24,7 +24,7 @@ __2. Hardware Setup__
 
 Component          	Connection          	Notes
 
-
+__________________________________________________________________________________________________________
 
 ### Web Application Documentation
 
