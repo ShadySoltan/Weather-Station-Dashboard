@@ -48,3 +48,4 @@ __2. API Endpoints__
 /api/weather	GET	Retrieve all data
 /api/weather/latest	GET	Latest sensor reading
 
+__________________________________________________________________________________________________________
