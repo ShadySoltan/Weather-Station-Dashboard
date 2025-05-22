@@ -10,10 +10,16 @@ A fully integrated IoT solution that collects real-time environmental data (temp
 ### Embedded System Documentation
 
 __Title: Weather Station DashBoard__
-Version: 1.0
-Last Updated: 05/22/2025
-1. Overview
+
+- Version: 1.0
+- Last Updated: 05/22/2025
+  
+__1. Overview:__
+   
 •	Purpose: Collect environmental data (temperature, humidity, light) and transmit to web backend.
+
 •	Target Hardware: TM4C123GH6PM + ESP8266 WiFi module.
-2. Hardware Setup
-Component	Connection	Notes
+
+__2. Hardware Setup__
+
+Component          	Connection          	Notes
