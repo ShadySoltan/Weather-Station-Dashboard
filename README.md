@@ -23,3 +23,25 @@ __1. Overview:__
 __2. Hardware Setup__
 
 Component          	Connection          	Notes
+
+
+
+### Web Application Documentation
+
+__Title: Weather Dashboard - Web Application Documentation__
+
+- Version: 1.0
+- Last Updated: 05/22/2025
+
+__1. System Diagram__
+
+![SYSd1](https://github.com/user-attachments/assets/235209ee-6b3e-4f3d-9645-a459843f5f76)
+
+__2. API Endpoints__
+
+### Endpoint	Method	Description
+
+/api/weather	POST	Store sensor data
+/api/weather	GET	Retrieve all data
+/api/weather/latest	GET	Latest sensor reading
+
