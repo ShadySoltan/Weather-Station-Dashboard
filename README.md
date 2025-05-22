@@ -7,6 +7,9 @@ A fully integrated IoT solution that collects real-time environmental data (temp
 # Project Sequence Diagram
 ![SD1](https://github.com/user-attachments/assets/1438699d-96a4-4d62-b66c-fe44821b53fb)
 
+__________________________________________________________________________________________________________
+
+
 ### Embedded System Documentation
 
 __Title: Weather Station DashBoard__
