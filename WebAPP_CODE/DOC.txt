@@ -1,1 +1,6 @@
+Testing Data:
 
+Invoke-WebRequest -Uri "http://localhost:5000/api/weather" `
+  -Method POST `
+  -Headers @{"Content-Type"="application/json"} `
+  -Body '{"temperature": 25.5, "humidity": 60, "light": 850, "pressure": 1013}'
