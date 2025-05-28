@@ -1,0 +1,141 @@
+/* Base Styles */
+:root {
+  --primary-blue: #e6f2ff;
+  --secondary-blue: #cce5ff;
+  --accent-blue: #66b3ff;
+  --dark-blue: #0077e6;
+  --text-dark: #333;
+  --text-light: #fff;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --transition: all 0.3s ease;
+  --gradient-background: linear-gradient(45deg, #B0E0E6, #ADD8E6, #87CEEB);
+  --navbar-gradient: linear-gradient(to right, #0077e6 0%, #66b3ff 100%);
+  --card-background: rgba(255, 255, 255, 0.9);
+}
+
+body {
+  background: url("https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: var(--text-dark);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  transition: var(--transition);
+}
+
+/* Navbar Styles */
+.MuiAppBar-root {
+  background: var(--navbar-gradient) !important;
+  box-shadow: var(--shadow-md) !important;
+  transition: var(--transition) !important;
+}
+
+.MuiButton-root {
+  color: var(--text-light) !important;
+  font-weight: 500 !important;
+  text-transform: none !important;
+  letter-spacing: 0.5px !important;
+  transition: var(--transition) !important;
+  padding: 8px 16px !important;
+  border-radius: 6px !important;
+}
+
+.MuiButton-root:hover {
+  background: rgba(255, 255, 255, 0.3) !important;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm) !important;
+}
+
+/* Dashboard Cards */
+.MuiCard-root {
+  background: var(--card-background) !important;
+  backdrop-filter: blur(8px);
+  border-radius: 12px !important;
+  box-shadow: var(--shadow-sm) !important;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out !important;
+  background-color: var(--text-light) !important;
+  border: none !important;
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md) !important;
+}
+
+/* Temperature Card */
+.MuiCard-root:nth-child(1) {
+  border-top: 4px solid #ff6b6b !important;
+}
+
+/* Humidity Card */
+.MuiCard-root:nth-child(2) {
+  border-top: 4px solid #4dabf7 !important;
+}
+
+/* Light Card */
+.MuiCard-root:nth-child(3) {
+  border-top: 4px solid #ffd43b !important;
+}
+
+/* Pressure Card */
+.MuiCard-root:nth-child(4) {
+  border-top: 4px solid #69db7c !important;
+}
+
+/* Chart Container */
+.chart-container {
+  background: rgba(255, 255, 255, 0.85);
+  background-color: var(--text-light);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(50, 120, 200, 0.1);
+  margin-bottom: 24px;
+  border: 1px solid rgba(204, 229, 255, 0.5);
+  transition: var(--transition);
+}
+
+.chart-container:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+/* Responsive Grid */
+.MuiContainer-root {
+  padding-top: 24px !important;
+  padding-bottom: 48px !important;
+}
+
+/* Loading Spinner */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-spinner {
+  border: 4px solid var(--secondary-blue);
+  border-top: 4px solid var(--accent-blue);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 40px auto;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .MuiGrid-container {
+    flex-direction: column;
+  }
+
+  .MuiCard-root {
+    margin-bottom: 16px !important;
+  }
+}
