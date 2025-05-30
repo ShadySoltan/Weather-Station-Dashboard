@@ -26,13 +26,35 @@ export default function LineChart({ data, title }) {
     plugins: {
       legend: {
         position: 'top',
+        labels: {
+          color: '#d0d0d0',
+        }
       },
       title: {
         display: true,
         text: title,
+        color: '#d0d0d0',
+      },
+    },
+    scales: {
+      y: {
+        ticks: {
+          color: '#d0d0d0',
+        },
+      },
+      x: {
+        ticks: {
+          color: '#d0d0d0',
+        },
       },
     },
   };
 
-  return <Line options={options} data={data} />;
+  return (
+    <div className="weather-gauge-box">
+      <div className="weather-gauge">
+        <Line options={options} data={data} />
+      </div>
+    </div>
+  );
 }
