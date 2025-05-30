@@ -1,5 +1,31 @@
 .navbar {
-  background: linear-gradient(to bottom, #E0F2F8, #B0E2FF);
-  position: relative;
-  overflow: hidden;
+  background-color: rgba(173, 216, 230, 0.3);
+  color: #d0d0d0;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  transition: box-shadow 0.2s ease;
+}
+
+.navbar:hover {
+  box-shadow: 0 0 10px gold;
+}
+
+.navbar-link {
+  color: #d0d0d0;
+  text-decoration: none;
+  transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+.navbar-title {
+  transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+.navbar-title:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px gold;
+}
+
+.navbar-link:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 5px gold;
 }

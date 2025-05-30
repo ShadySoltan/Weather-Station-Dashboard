@@ -1,0 +1,18 @@
+.weather-gauge-box {
+  background-color: #0a0e17;
+  border-radius: 15px;
+  border: 1px solid rgba(62, 66, 78, 0.5);
+  padding: 10px;
+}
+
+.weather-gauge {
+  padding: 16px;
+}
+
+.weather-gauge-title {
+  color: #d0d0d0;
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+/* Add more styles for the gauge as needed */

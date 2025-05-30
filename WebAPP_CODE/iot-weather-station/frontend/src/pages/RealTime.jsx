@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import { Grid, Typography, Paper } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import { Thermometer, Droplet, Sun, Gauge } from 'lucide-react';
 import axios from 'axios';
+import DashboardCard from '../components/DashboardCard';
 
 export default function RealTime() {
   const [weatherData, setWeatherData] = useState(null);
@@ -37,43 +38,39 @@ export default function RealTime() {
       </Grid>
 
       <Grid item xs={12} sm={6} md={3}>
-        <Paper sx={{ p: 3, display: 'flex', alignItems: 'center' }}>
-          <Thermometer size={48} style={{ marginRight: 16 }} />
-          <div>
-            <Typography variant="h6">Temperature</Typography>
-            <Typography variant="h4">{weatherData.temperature} °C</Typography>
-          </div>
-        </Paper>
+        <DashboardCard
+          title="Temperature"
+          value={weatherData.temperature}
+          unit="°C"
+          icon={<Thermometer size={48} />}
+        />
       </Grid>
 
       <Grid item xs={12} sm={6} md={3}>
-        <Paper sx={{ p: 3, display: 'flex', alignItems: 'center' }}>
-          <Droplet size={48} style={{ marginRight: 16 }} />
-          <div>
-            <Typography variant="h6">Humidity</Typography>
-            <Typography variant="h4">{weatherData.humidity} %</Typography>
-          </div>
-        </Paper>
+        <DashboardCard
+          title="Humidity"
+          value={weatherData.humidity}
+          unit="%"
+          icon={<Droplet size={48} />}
+        />
       </Grid>
 
       <Grid item xs={12} sm={6} md={3}>
-        <Paper sx={{ p: 3, display: 'flex', alignItems: 'center' }}>
-          <Sun size={48} style={{ marginRight: 16 }} />
-          <div>
-            <Typography variant="h6">Light</Typography>
-            <Typography variant="h4">{weatherData.light} lux</Typography>
-          </div>
-        </Paper>
+        <DashboardCard
+          title="Light"
+          value={weatherData.light}
+          unit="lux"
+          icon={<Sun size={48} />}
+        />
       </Grid>
 
       <Grid item xs={12} sm={6} md={3}>
-        <Paper sx={{ p: 3, display: 'flex', alignItems: 'center' }}>
-          <Gauge size={48} style={{ marginRight: 16 }} />
-          <div>
-            <Typography variant="h6">Pressure</Typography>
-            <Typography variant="h4">{weatherData.pressure || 'N/A'} hPa</Typography>
-          </div>
-        </Paper>
+        <DashboardCard
+          title="Pressure"
+          value={weatherData.pressure || 'N/A'}
+          unit="hPa"
+          icon={<Gauge size={48} />}
+        />
       </Grid>
     </Grid>
   );

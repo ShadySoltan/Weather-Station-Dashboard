@@ -1,0 +1,38 @@
+.stats-card {
+  background-color: #B0E2FF;
+  border-radius: 25px;
+  border: 1px solid #3e424e;
+  min-width: 275px;
+  height: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.stats-card:hover {
+  background-color: #ADD8E6;
+}
+
+.stats-card-content {
+  padding: 16px;
+}
+
+.stats-card-title {
+  background: linear-gradient(to right, yellow, gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+  transition: text-shadow 0.3s ease;
+}
+
+.stats-card-value {
+  background: linear-gradient(to right, yellow, gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+  transition: text-shadow 0.3s ease;
+}
+
+.stats-card-title:hover,
+.stats-card-value:hover {
+  text-shadow: 0 0 5px gold;
+}
