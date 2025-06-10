@@ -4,7 +4,11 @@ import './Navbar.css';
 
 export default function Navbar() {
   return (
-    <AppBar position="static" className="navbar">
+    <AppBar position="static" className="navbar" sx={{
+      backgroundColor: 'rgba(148, 0, 211, 0.15)',
+      backdropFilter: 'blur(20px)',
+      WebkitBackdropFilter: 'blur(20px)'
+    }}>
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1, color: '#d0d0d0', fontFamily: 'Roboto', fontWeight: 700, textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }} className="navbar-title">
           IoT Weather Station

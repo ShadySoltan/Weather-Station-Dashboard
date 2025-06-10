@@ -1,18 +1,6 @@
-.weather-gauge-box {
-  background-color: #0a0e17;
-  border-radius: 15px;
-  border: 1px solid rgba(62, 66, 78, 0.5);
-  padding: 10px;
-}
-
 .weather-gauge {
-  padding: 16px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px; /* Add padding to create space around the chart */
 }
-
-.weather-gauge-title {
-  color: #d0d0d0;
-  font-size: 1.25rem;
-  margin-bottom: 8px;
-}
-
-/* Add more styles for the gauge as needed */

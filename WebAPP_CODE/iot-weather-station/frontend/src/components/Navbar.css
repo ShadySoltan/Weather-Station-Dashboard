@@ -1,5 +1,5 @@
 .navbar {
-  background-color: rgba(173, 216, 230, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
   color: #d0d0d0;
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
@@ -7,7 +7,7 @@
 }
 
 .navbar:hover {
-  box-shadow: 0 0 10px gold;
+  box-shadow: 0 0 10px rgb(255, 0, 0);
 }
 
 .navbar-link {
@@ -22,10 +22,10 @@
 
 .navbar-title:hover {
   transform: scale(1.1);
-  text-shadow: 0 0 10px gold;
+  text-shadow: 0 0 10px rgb(255, 0, 140);
 }
 
 .navbar-link:hover {
   transform: scale(1.1);
-  text-shadow: 0 0 5px gold;
+  text-shadow: 0 0 5px rgb(255, 0, 0);
 }
