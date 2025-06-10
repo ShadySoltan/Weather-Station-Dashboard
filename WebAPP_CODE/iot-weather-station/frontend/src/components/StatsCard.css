@@ -16,7 +16,8 @@
 }
 
 .stats-card-title {
-  background: linear-gradient(to right, yellow, gold);
+  background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 255, 255));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.25rem;
@@ -25,7 +26,8 @@
 }
 
 .stats-card-value {
-  background: linear-gradient(to right, yellow, gold);
+  background: linear-gradient(to right, rgb(255, 0, 81), rgb(76, 0, 255));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.5rem;
@@ -34,5 +36,5 @@
 
 .stats-card-title:hover,
 .stats-card-value:hover {
-  text-shadow: 0 0 5px gold;
+  text-shadow: 0 0 5px rgb(148, 0, 71);
 }

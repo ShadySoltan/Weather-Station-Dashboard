@@ -9,12 +9,12 @@ export default function DashboardCard({ title, value, unit, icon, color }) {
     transition: 'transform 0.2s, box-shadow 0.2s, background-color 0.3s ease',
     '&:hover': {
       transform: 'scale(1.05)',
-      boxShadow: '0 0 20px gold',
-      backgroundColor: 'rgba(173, 216, 230, 0.3)',
+      boxShadow: '0 0 20px red',
+      backgroundColor: 'rgba(4, 192, 255, 0.3)',
     } }}>
       <CardContent>
         <Typography variant="h5" component="div" gutterBottom style={{ 
-          background: 'linear-gradient(to right, yellow, gold)',
+          background: 'linear-gradient(to right, white, white)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           transition: 'text-shadow 0.3s ease',
@@ -26,7 +26,7 @@ export default function DashboardCard({ title, value, unit, icon, color }) {
         </Typography>
         <Box display="flex" alignItems="center" justifyContent="space-between">
           <Typography variant="h3" style={{ 
-            background: 'linear-gradient(to right, yellow, gold)',
+            background: 'linear-gradient(to right, lightgreen, darkcyan)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             transition: 'text-shadow 0.3s ease',
