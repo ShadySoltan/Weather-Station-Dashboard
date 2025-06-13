@@ -220,6 +220,10 @@ MPU Risters
 /*****************************************************************************
 System Control Risters
 *****************************************************************************/
+#define SYSCTL_BASE       0x400FE000
+#define SYSCTL_RCGCGPIO   (*((volatile uint32_t *)(SYSCTL_BASE + 0x608)))
+#define SYSCTL_PRGPIO     (*((volatile uint32_t *)(SYSCTL_BASE + 0xA08)))
+
 #define SYSCTL_DID0_R           (*((volatile uint32 *)0x400FE000))
 #define SYSCTL_DID1_R           (*((volatile uint32 *)0x400FE004))
 #define SYSCTL_DC0_R            (*((volatile uint32 *)0x400FE008))
@@ -477,6 +481,26 @@ UART5 Risters
 #define UART5_PP_R              (*((volatile uint32 *)0x40011FC0))
 #define UART5_CC_R              (*((volatile uint32 *)0x40011FC8))
 
+// UART1 Registers
+#define UART1_DR_R              (*((volatile uint32 *)0x4000D000))
+#define UART1_FR_R              (*((volatile uint32 *)0x4000D018))
+#define UART1_IBRD_R            (*((volatile uint32 *)0x4000D024))
+#define UART1_FBRD_R            (*((volatile uint32 *)0x4000D028))
+#define UART1_LCRH_R            (*((volatile uint32 *)0x4000D02C))
+#define UART1_CTL_R             (*((volatile uint32 *)0x4000D030))
+#define UART1_CC_R              (*((volatile uint32 *)0x4000DFC8))
+
+
+// UART6 Registers
+#define UART6_DR_R      (*((volatile uint32 *)0x400E0000))  // Data Register
+#define UART6_FR_R      (*((volatile uint32 *)0x400E0018))  // Flag Register
+#define UART6_IBRD_R    (*((volatile uint32 *)0x400E0024))  // Integer Baud Rate
+#define UART6_FBRD_R    (*((volatile uint32 *)0x400E0028))  // Fractional Baud Rate
+#define UART6_LCRH_R    (*((volatile uint32 *)0x400E002C))  // Line Control
+#define UART6_CTL_R     (*((volatile uint32 *)0x400E0030))  // Control
+#define UART6_CC_R      (*((volatile uint32 *)0x400E0FC8))  // Clock Configuration
+
+
 
 #define UART5_DATA_5BITS          0x0
 #define UART5_DATA_6BITS          0x1
@@ -580,5 +604,26 @@ UART5 Risters
 #define PWM1_3_FLTSTAT0_R       (*((volatile uint32 *)0x40029984))
 #define PWM1_3_FLTSTAT1_R       (*((volatile uint32 *)0x40029988))
 #define PWM1_PP_R               (*((volatile uint32 *)0x40029FC0))
+
+
+#define ADC0_ACTSS_R            (*((volatile uint32 *)0x40038000))
+#define ADC0_RIS_R              (*((volatile uint32 *)0x40038004))
+#define ADC0_IM_R               (*((volatile uint32 *)0x40038008))
+#define ADC0_ISC_R              (*((volatile uint32 *)0x4003800C))
+#define ADC0_EMUX_R             (*((volatile uint32 *)0x40038014))
+#define ADC0_SSPRI_R            (*((volatile uint32 *)0x40038020))
+#define ADC0_PSSI_R             (*((volatile uint32 *)0x40038028))
+#define ADC0_SAC_R              (*((volatile uint32 *)0x40038030))
+#define ADC0_SSMUX3_R           (*((volatile uint32 *)0x400380A0))
+#define ADC0_SSCTL3_R           (*((volatile uint32 *)0x400380A4))
+#define ADC0_SSFIFO3_R          (*((volatile uint32 *)0x400380A8))
+#define ADC0_SSFSTAT3_R         (*((volatile uint32 *)0x400380AC))
+#define ADC0_ISC_R              (*((volatile uint32 *)0x4003800C))
+
+
+#define I2C0_MSA_R              (*((volatile uint32 *)0x40020000))
+#define I2C0_MCR_R              (*((volatile uint32 *)0x40020004))
+#define I2C0_MTPR_R             (*((volatile uint32 *)0x4002000C))
+
 
 #endif
