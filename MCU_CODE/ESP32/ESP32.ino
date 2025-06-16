@@ -84,7 +84,7 @@ void setup() {
 
 
   Serial.println("Attempting to connect to stored WiFi or start AP for configuration...");
-  if (!wifiManager.autoConnect("ESP_Sensor_Setup", "password")) {
+  if (!wifiManager.autoConnect("Weather_dashboard_Connection", "password")) {
     Serial.println("Failed to connect and timed out.");
     ESP.restart(); // Restart and try again
     delay(5000);
