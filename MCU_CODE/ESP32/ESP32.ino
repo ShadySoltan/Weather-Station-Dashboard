@@ -5,7 +5,7 @@
 #include <WiFiManager.h>    // The WiFiManager library (should be compatible with ESP32)
 
 // --- Server Configuration ---
-const char* serverUrl = "http://192.168.1.21:5000/api/weather"; // Your API endpoint
+const char* serverUrl = "http://localhost:5000/api/weather"; // Your API endpoint
 
 // Declare a WiFiClient object globally.
 WiFiClient espClient;
